@@ -1,0 +1,11 @@
+Assignment
+
+Create web application for Hotel Management Application using Django
+Following should be applicable Generic view of this project
+- ListView
+- CreateView
+- UpdateView
+- DeleteView
+
+Following are required models:
+- Hotel model, Room Model, Employee
