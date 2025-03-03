@@ -4,11 +4,16 @@ from .views import (
     HotelListView, HotelCreateView, HotelUpdateView, HotelDeleteView,
     RoomListView, RoomCreateView, RoomUpdateView, RoomDeleteView,
     EmployeeListView, EmployeeCreateView, EmployeeUpdateView, EmployeeDeleteView,
-    home
+    home, tologin,tologout
 )
 
 urlpatterns = [
-    path('', home,name="home"),
+    path('', home, name="home1"),
+    path('login/', tologin,name="tologin"),
+    path('home/', home, name="home"),
+    path('logout/', tologout, name="tologout"),
+
+
     # Hotel URLs
     path('hotels/', HotelListView.as_view(), name='hotel_list'),
     path('hotels/create/', HotelCreateView.as_view(), name='hotel_create'),

@@ -7,9 +7,12 @@
 </head>
 <body>
 <h1>DashBoard Page</h1>
+<a href="{% url 'tologout'%}" class="link-danger">Log Out</a> <br> <hr>
+
 <a href="{% url 'hotel_list'%}">Hotel Page</a> <br> <hr>
 <a href="{% url 'room_list'%}" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Room Page</a> <br> <hr>
 <a href="{% url 'employee_list'%}">Employee Page</a>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
 </html>

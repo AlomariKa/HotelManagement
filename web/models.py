@@ -8,7 +8,7 @@ class Hotel(models.Model):
     rating = models.FloatField()
 
     def __str__(self):
-        return self.name
+        return f"Hi{self.name}"
 
 class Room(models.Model):
     hotel = models.ForeignKey(Hotel, on_delete=models.CASCADE)
